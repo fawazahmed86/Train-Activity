@@ -62,4 +62,9 @@
   database.ref().on("child_added", function(newInput){
     console.log(newInput.val().name);
 
+    $("#name-input").val('');
+    $("#dest-input").val('');
+    $("#time-input").val('');
+    $("#freq-input").val('');
+
   })
